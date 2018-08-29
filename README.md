@@ -1,5 +1,8 @@
 # JTAGManager
 
+[![Build Status](https://travis-ci.org/hildebrandmw/JTAGManager.jl.svg?branch=master)](https://travis-ci.org/hildebrandmw/JTAGManager.jl)
+[![codecov.io](https://codecov.io/gh/hildebrandmw/JTAGManager.jl/graphs/badge.svg?branch=master)](https://codecov.io/gh/hildebrandmw/JTAGManager.jl)
+
 A simple package for interfacing with the provided TCL server running in Quartus'
 System Console. The main goal of the package is to provide an easier way to 
 transfer data from a host system to an Intel FPGA using just the USB-Blaster
