@@ -1,7 +1,7 @@
 # JTAGManager
 
 A simple package for interfacing with the provided TCL server running in Quartus'
-SystemConsole. The main goal of the package is to provide an easier way to 
+System Console. The main goal of the package is to provide an easier way to 
 transfer data from a host system to an Intel FPGA using just the USB-Blaster
 cable.
 
@@ -13,7 +13,7 @@ Platform Designer) is used to allow the JTAG input from the USB-Blaster cable
 to serve as a master for the Avalon interface.
 
 Then, a TCL server (courtesy of D.W. Hawkins) is then run in Quartus 
-SystemConsole. This server allows any language capable of forming a TCP 
+System Console. This server allows any language capable of forming a TCP 
 connection to generate read and write commands to the Avalon-MM system. By
 default, this server listens on port `2540`.
 *Security Note* The server is by default configured to only accept connections
