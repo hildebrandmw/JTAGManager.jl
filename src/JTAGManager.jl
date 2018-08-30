@@ -71,6 +71,7 @@ end
 Write `data` to the connected device starting at `addresses`. If `data` is a 
 large vector, break it up into sizes of `bytes_per_transfer`.
 """
+Base.write(jtag::JTAG, address, data::Integer; kwargs...) = write(jtag, address, [data]; kwargs...)
 function Base.write(
             jtag::JTAG, 
             address,

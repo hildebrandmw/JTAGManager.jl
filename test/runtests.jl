@@ -66,6 +66,12 @@ end
     data = read(jtag, 0, 5)
     @test data == [1,2,1,2,3]
 
+    # Test 3 - single integer version
+    write(jtag, 9, 10)
+    sleep(0.5)
+    data = read(jtag, 9, 1)
+    @test data == [10]
+
     close(jtag)
     @test jtag.isopen == false
 end
